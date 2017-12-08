@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Firmstep Test</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 filters-col">
+				<div class="filters" id="filters">
+					<form>
+						<div class="filter-criteria" id="manufacturer">
+							<span>Manufacturer</span>
+							<label><input type="checkbox" value="0">Apple </input> </label>
+							<label><input type="checkbox" value="1">Samsung</label>
+							<label><input type="checkbox" value="2">HTC</label>
+							<label><input type="checkbox" value="3">Nokia</label>
+							<label><input type="checkbox" value="4">ZTE</label>
+							<label><input type="checkbox" value="5">Sony</label>
+						</div>
+						<div class="filter-criteria" id="storage">
+							<span>Storage Capacity</span>
+							<label><input type="checkbox" value="6">16 GB</label>
+							<label><input type="checkbox" value="7">32 GB</label>
+						</div>
+						<div class="filter-criteria" id="os">
+							<span>OS</span>
+							<label><input type="checkbox" value="8">Android</label>
+							<label><input type="checkbox" value="9">iOS</label>
+							<label><input type="checkbox" value="10">Windows</label>
+						</div>
+						<div class="filter-criteria" id="camera">
+							<span>Camera</span>
+							<label><input type="checkbox" value="11">5 Mpx</label>
+							<label><input type="checkbox" value="12">8 Mpx</label>
+							<label><input type="checkbox" value="13">12 Mpx</label>
+							<label><input type="checkbox" value="14">15 Mpx</label>
+						</div>
+						<button id="clear-filters">Clear filters</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-10" id="products-container">
+				<ul class="products-list" id="products-list">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
